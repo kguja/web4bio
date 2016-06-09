@@ -56,7 +56,8 @@ sand.createTable=function(){
     sand.parms.forEach(function(p){
         var c = document.createElement('td')
         c.textContent=p
-        c.style.color="blue"
+        c.style.color="black"
+        c.style.fontWeight="12"
         r.appendChild(c)
         c.style.backgroundColor='silver'
     })
