@@ -1,0 +1,61 @@
+<html>
+
+    <head>
+        <title>example array using cbio</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+        <body><b>Example array using cbio:</b>
+    </head>
+    <br>
+    <br>
+
+    
+<pre>
+	sand.arrayTrouble=function(){
+	  cbio.getMutationData({
+	  case_set_id:"brca_tcga",
+	  genetic_profile_id:"brca_tcga_mutations",
+	  gene_list:["EGFR","PTEN","TP53"]
+	},
+	function(x){
+	         sand.rows=x
+	         sand.parms = Object.getOwnPropertyNames(x[0])
+	         sand.cols={}
+	         sand.parms.forEach(function(parmi){
+	             sand.cols[parmi]=[]
+	             sand.rows.forEach(function(d){
+	                 sand.cols[parmi].push(parseFloat(d[parmi]))
+	             })
+	         })
+	         sand.createTable()
+	     })
+	}
+	
+	sand.arrayTrouble()
+</pre>
+<br>
+    <b>which does the same thing as:</b>
+
+    
+<pre>
+    sand.arrayTrouble=function(){
+    $.getJSON('https://opendata.socrata.com/resource/g6hg-3p2t.json')
+     .then(function(x){
+         sand.rows=x
+         sand.parms = Object.getOwnPropertyNames(x[0])
+         sand.cols={}
+         sand.parms.forEach(function(parmi){
+             sand.cols[parmi]=[]
+             sand.rows.forEach(function(d){
+                 sand.cols[parmi].push(parseFloat(d[parmi]))
+             })
+         })
+         sand.createTable()
+     })
+}
+
+sand.arrayTrouble()
+</pre>
+    </body>
+
+</html>
