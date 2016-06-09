@@ -57,7 +57,7 @@ sand.createTable=function(){
         var c = document.createElement('td')
         c.textContent=p
         c.style.color="black"
-        c.style.fontWeight="12"
+        c.style.fontWeight="bold"
         r.appendChild(c)
         c.style.backgroundColor='silver'
     })
