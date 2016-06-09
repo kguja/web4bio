@@ -21,7 +21,7 @@ makePlotly( x, y, standard_deviation );
 }
 
 function makePlotly( x, y, standard_deviation ){
-var plotDiv = document.getElementById("plot");
+var plotDiv = document.getElementById("secondDiv");
 var traces = [{
 x: x,
 y: y,
@@ -36,7 +36,7 @@ yaxis: {
 title: 'Percent of cases'
 }
 }
-Plotly.newPlot('secondDiv', traces, layout);
+Plotly.newPlot('plotDiv', traces, layout);
 };
 makeplot();
 
@@ -46,7 +46,7 @@ sand.createTable=function(){
     // create table
     var tb = document.createElement('table')
     tb.className='table table-striped'
-    firstDiv.appendChild(tb)
+    thirdDiv.appendChild(tb)
     // table head
     var tHead = document.createElement('thead')
     //tHead.className='table-striped'
