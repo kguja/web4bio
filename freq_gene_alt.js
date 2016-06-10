@@ -9,7 +9,7 @@ function makeplot() {
 //parse data
 function processData(allRows) {
 
-    console.log(allRows);
+    //console.log(allRows);
     var x = [],
         y = [],
         standard_deviation = [];
