@@ -1,5 +1,5 @@
 //import data
-function makeplot() {
+function makeplot1() {
     Plotly.d3.csv("https://dd1b46b424e4e3f9961498357f957a19d05964c6.googledrive.com/host/0B0SVcCQxjPXTdUJESjhaZ2JhTWs/freq_gene_alt.csv", function(data) {
         processData(data)
     });
@@ -45,4 +45,4 @@ function makePlotly(x, y, standard_deviation) {
     }
     Plotly.newPlot('plot3', traces, layout);
 }
-makeplot();
+makeplot1();
