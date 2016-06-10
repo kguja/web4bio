@@ -85,6 +85,6 @@ function makePlotly(x0, x1, x2, x3, x4, x5, x6, x7, x8) {
     };
     Plotly.newPlot('plot1', all_traces, layout);
 };
-//makeplot();
+makeplot();
 /* Current Plotly.js version */
 //console.log(Plotly.BUILD);
