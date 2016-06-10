@@ -39,7 +39,7 @@ function processData(allRows) {
 }
 
 //make plot
-PLOT1 = document.getElementById('plot1');
+//PLOT1 = document.getElementById('plot1');
 
 function makePlotly(x0, x1, x2, x3, x4, x5, x6, x7, x8) {
     var plot1 = document.getElementById("plot1");
