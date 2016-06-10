@@ -2,14 +2,14 @@
 
 function makeplot() {
     Plotly.d3.csv("https://dd1b46b424e4e3f9961498357f957a19d05964c6.googledrive.com/host/0B0SVcCQxjPXTdUJESjhaZ2JhTWs/diabetes.csv", function(data) {
-        processData(data)
+        processData2(data)
     });
 
 }
 
 //parse data
 
-function processData(allRows) {
+function processData2(allRows) {
 
     console.log(allRows);
     var x0 = [],
@@ -85,6 +85,6 @@ function makePlotly(x0, x1, x2, x3, x4, x5, x6, x7, x8) {
     };
     Plotly.newPlot('plot1', traces, layout);
 }
-//makeplot();
+makeplot();
 /* Current Plotly.js version */
 console.log(Plotly.BUILD);
