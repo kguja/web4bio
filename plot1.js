@@ -20,7 +20,7 @@ function processData2(allRows) {
         x5 = [],
         x6 = [],
         x7 = [],
-        x8 = [];
+        x8 = []
 
     for (var i = 0; i < allRows.length; i++) {
         row = allRows[i];
