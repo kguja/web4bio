@@ -11,7 +11,7 @@ function makeplot() {
 
 function processData2(allRows) {
 
-    console.log(allRows);
+    //console.log(allRows);
     var x0 = [],
         x1 = [],
         x2 = [],
