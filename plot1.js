@@ -20,7 +20,7 @@ function processData2(allRows) {
         x5 = [],
         x6 = [],
         x7 = [],
-        x8 = []
+        x8 = [];
 
     for (var i = 0; i < allRows.length; i++) {
         row = allRows[i];
@@ -79,11 +79,11 @@ function makePlotly(x0, x1, x2, x3, x4, x5, x6, x7, x8) {
         x: x8,
         type: 'histogram'
     };
-    var traces = [trace2, trace8];
+    var all_traces = [trace2, trace8];
     var layout = {
         barmode: 'overlay'
     };
-    Plotly.newPlot('plot1', traces, layout);
+    Plotly.newPlot('plot1', all_traces, layout);
 };
 //makeplot();
 /* Current Plotly.js version */
