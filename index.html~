@@ -1,7 +1,7 @@
 <!DOCTYPE html><html>
 
     <head>
-        <title>web4bio project: kip</title>
+        <title>web4bio project</title>
         <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
@@ -9,7 +9,7 @@
     </head>
 
     <body>
-        <div class="container" id="textDiv1">
+        <div class="container" id="firstDiv">
              <h3>cBioPortal: Invasive Breast Carcinoma</h3>
              <h4><i>Grace, Agatha, Kip</i></h4>
             <hr>

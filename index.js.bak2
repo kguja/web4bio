@@ -71,10 +71,7 @@ sand.createTable=function(){
                 c.style.color='red'
             }
             c.onclick=function(){
-                this.style.color='blue'
-            }
-            c.onmouseover=function(){
-                this.style.color='green'
+                4
             }
             4
             
@@ -83,7 +80,7 @@ sand.createTable=function(){
     })
 
     // tired of tables, time for deep learning
-    $.getScript('https://cs.stanford.edu/people/karpathy/convnetjs/build/convnet-min.js')
+    $.getScript('http://cs.stanford.edu/people/karpathy/convnetjs/build/convnet-min.js')
      .then(function(){
          console.log('thinking deeply about this data:',sand.cols)
      })

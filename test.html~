@@ -1,0 +1,14 @@
+<html>
+	<title>test</title>
+	<head>
+		<!-- Load Plotly CDN -->
+		<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+	</head>
+	<body>
+	<p>
+	Here's a simple Plotly plot:
+	</p>
+	<div id="test" style="width:90%;height:250px;"></div>
+	<script src="test.js"></script>
+</body>
+</html>

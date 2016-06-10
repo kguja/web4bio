@@ -1,3 +1,4 @@
+/*
 function makeplot() {
 Plotly.d3.csv("https://dd1b46b424e4e3f9961498357f957a19d05964c6.googledrive.com/host/0B0SVcCQxjPXTdUJESjhaZ2JhTWs/freq_gene_alt.csv", function(data){ processData(data) } );
 
@@ -36,6 +37,7 @@ title: 'Percent of cases'
 Plotly.newPlot('myDiv', traces, layout);
 };
 makeplot();
+*/
 
 // Jonas playing in the sandbox
 sand={}
@@ -53,9 +55,7 @@ sand.createTable=function(){
     sand.parms.forEach(function(p){
         var c = document.createElement('td')
         c.textContent=p
-        c.style.color="blue"
         r.appendChild(c)
-        c.style.backgroundColor='silver'
     })
     tHead.appendChild(r)
     tBd = document.createElement('tbody')
@@ -67,23 +67,13 @@ sand.createTable=function(){
             var c = document.createElement('td')
             r.appendChild(c)
             c.textContent=d[p]
-            if(parseFloat(c.textContent)>30){
-                c.style.color='red'
-            }
-            c.onclick=function(){
-                this.style.color='blue'
-            }
-            c.onmouseover=function(){
-                this.style.color='green'
-            }
-            4
-            
+
         })
         4
     })
 
     // tired of tables, time for deep learning
-    $.getScript('https://cs.stanford.edu/people/karpathy/convnetjs/build/convnet-min.js')
+    $.getScript('http://cs.stanford.edu/people/karpathy/convnetjs/build/convnet-min.js')
      .then(function(){
          console.log('thinking deeply about this data:',sand.cols)
      })
@@ -91,9 +81,14 @@ sand.createTable=function(){
     4
 
 }
+
 sand.arrayTrouble=function(){
-    $.getJSON('https://opendata.socrata.com/resource/g6hg-3p2t.json')
-     .then(function(x){
+  cbio.getMutationData({
+  case_set_id:"brca_tcga",
+  genetic_profile_id:"brca_tcga_mutations",
+  gene_list:["EGFR","PTEN","TP53"]
+},
+function(x){
          sand.rows=x
          sand.parms = Object.getOwnPropertyNames(x[0])
          sand.cols={}
@@ -108,4 +103,3 @@ sand.arrayTrouble=function(){
 }
 
 sand.arrayTrouble()
-

@@ -53,9 +53,7 @@ sand.createTable=function(){
     sand.parms.forEach(function(p){
         var c = document.createElement('td')
         c.textContent=p
-        c.style.color="blue"
         r.appendChild(c)
-        c.style.backgroundColor='silver'
     })
     tHead.appendChild(r)
     tBd = document.createElement('tbody')
@@ -67,23 +65,13 @@ sand.createTable=function(){
             var c = document.createElement('td')
             r.appendChild(c)
             c.textContent=d[p]
-            if(parseFloat(c.textContent)>30){
-                c.style.color='red'
-            }
-            c.onclick=function(){
-                this.style.color='blue'
-            }
-            c.onmouseover=function(){
-                this.style.color='green'
-            }
-            4
             
         })
         4
     })
 
     // tired of tables, time for deep learning
-    $.getScript('https://cs.stanford.edu/people/karpathy/convnetjs/build/convnet-min.js')
+    $.getScript('http://cs.stanford.edu/people/karpathy/convnetjs/build/convnet-min.js')
      .then(function(){
          console.log('thinking deeply about this data:',sand.cols)
      })

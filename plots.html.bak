@@ -1,0 +1,80 @@
+<html>
+
+    <head>
+        <title>web4bio project</title>
+        <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"></link>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+        <!-- <script src="plot1.js"></script> -->
+        <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    </head>
+
+    <body>
+        <div class="container" id="textDiv1">
+             <h3>web4bio application page</h3>
+             <h4><i>by kip, gunjan, grace, and agatha</i></h4>
+            <hr>
+             <h4 style="color:blue">The data</h4>
+            <li>Publication <a target="_blank" href="http://www.nature.com/articles/sdata201419">http://www.nature.com/articles/sdata201419</a>
+            </li>
+            <li>Digital Object Identifier <a target="_blank" href="http://datadryad.org/resource/doi:10.5061/dryad.fj974">doi:10.5061/dryad.fj974</a>
+            </li>
+            <li>Proxy at <a target="_blank" href="https://script.google.com/a/mathbiol.org/d/1JpACT22o9o9kDaSAEzBdEJVSkirIKjrN0WsKbh2dzCMxqu_k0WX_G6iE/edit?usp=drive_web">https://script.google.com/a/mathbiol.org/d/1JpACT22o9o9kDaSAEzBdEJVSkirIKjrN0WsKbh2dzCMxqu_k0WX_G6iE/edit?usp=drive_web</a>
+            </li>
+            <li>Data retrieved through <a target="_blank" href="https://script.google.com/macros/s/AKfycbw5YRlPoPHjikc8Yx942SqPnxnkqwCdgDDzXZm3d-AaXD3YuH0/exec">https://script.google.com/macros/s/AKfycbw5YRlPoPHjikc8Yx942SqPnxnkqwCdgDDzXZm3d-AaXD3YuH0/exec</a>
+            </li>
+        </div>
+        <!-- end of textDiv1 -->
+
+
+        <!-- testing -->
+        <!-- plot1 -->
+        <div class="container" id="textDiv2">
+            <br>
+            <hr>
+             <h4 style="color:blue">Plot 1</h4>
+            <li>This is the first plot</li>
+            <br>
+        </div>
+        <div class="container" id="plot1" style="width:600px;height:250px;">
+            <script src="plot1.js"></script>
+        </div>
+        <!-- plot2 -->
+        <div class="container" id="textDiv3">
+            <br>
+            <hr>
+             <h4 style="color:blue">Plot 2</h4>
+            <li>This is the second plot</li>
+            <br>
+        </div>
+        <div class="container" id="plot2" style="width:600px;height:250px;">
+            <script src="plot2.js"></script>
+        </div>
+        <!-- freq_gene_alt -->
+        <div class="container" id="textDiv4">
+            <br>
+            <hr>
+             <h4 style="color:blue">Plot of freq_gene_alt</h4>
+            <li>This is the freq_gene_alt plot</li>
+            <br>
+        </div>
+        <div class="container" id="plot3" style="width:600px;height:250px;">
+            <script src="freq_gene_alt.js"></script>
+        </div>
+        <!-- firstDiv aka the table -->
+         <div class="container" id="textDiv5">
+            <br>
+            <hr>
+             <h4 style="color:blue">Table of diabetes data</h4>
+            <li>This is a table of the diabetes datat</li>
+            <br>
+        </div>
+        <div class="container" id="firstDiv">
+            <script src="table.js"></script>
+        </div>
+        <!-- end of testing -->
+
+        <!-- <div style="color:red" id="lemurAnalysis">loading analysis ...</div> -->
+    </body>
+
+</html>
